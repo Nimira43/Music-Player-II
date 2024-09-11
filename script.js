@@ -81,3 +81,11 @@ const coverArtist = document.querySelector('.cover span:nth-child(1)')
 
 let songIndex = 0
 
+const loadSong = (index) => {
+  coverName.textContent = songData[index].name
+  coverArtist.textContent = songData[index].artist
+  songName.textContent = songData[index].name
+  songArtist.textContent = songData[index.artist]
+  audio.src = `music/${songData[index].src}.mp3`
+}
+
