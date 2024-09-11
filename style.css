@@ -19,7 +19,7 @@ html {
   --light: #eee;
   ---grey-l: #ccc;
   --grey-m: #777;
-  --grey-d: #222;
+  --grey-d: #333;
   --yellow: #fdfd6b;
   --br-round: 50%;
 }
@@ -95,6 +95,8 @@ html {
   border-radius: var(--br-round);
   box-shadow: 0.6rem 0.6rem 4rem -0.1rem rgba(0, 0, 0, 0.9),
       -0.6rem -0.6rem 4rem -0.2rem rgba(255, 255, 255, 0.4);
+      position: relative;
+  transform: rotateZ(-15deg);
 }
 
 .cover {
@@ -104,6 +106,66 @@ html {
   border-radius: var(--br-round);
 }
 
-.cover-span {
+.cover span {
   font-family: 'Caveat', cursive;
+  position: absolute;
+  display: block;
+}
+
+.cover span:nth-child(1) {
+  color: var(--yellow);
+  font-size: 1.6rem; 
+  top: 20%;
+  left: 30%;
+}
+
+.cover span:nth-child(2) {
+  color: var(--secondary);
+  font-size:2.5rem; 
+  top: 35%;
+  left: 20%;
+  width: 10rem;
+  text-align: center;
+}
+
+.song-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.song-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-name {
+  font-size: 2rem;
+  color: var(--secondary);
+}
+
+.song-artist {
+  font-size: 1.2rem;
+  color: var(--yellow);
+}
+
+.song-info i {
+  font-size: 2rem;
+  color: var(--yellow);
+}
+
+.song-time {
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--dark);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem var(--main);
+  cursor: pointer
+}
+
+.song-progress {
+
 }
