@@ -39,13 +39,14 @@ html {
 
 .player {
   width: 35rem;
-  height: 70rem;
+  height: 55rem;
   background: linear-gradient(
     to top,
     var(--dark),
     var(--grey-d)
   );
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.4);
+  border: 0.3rem solid var(--main);
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -153,7 +154,7 @@ html {
 
 .song-info i {
   font-size: 2rem;
-  color: var(--main);
+  color: var(--yellow);
 }
 
 .song-time {
@@ -187,4 +188,37 @@ html {
 .time span {
   font-size: 1.2rem;
   color: var(--secondary)
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play-pause {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--yellow);
+  border: 0.3rem solid var(--main);
+  color: var(--dark)
+}
+
+.player-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.player-footer i {
+  font-size: 1.8rem;
+  color: var(--yellow);
+}
+
+.player-footer span {
+  font-size: 1.2rem;
+  color: var(--yellow);
 }
