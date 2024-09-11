@@ -90,7 +90,7 @@ const loadSong = (index) => {
   coverArtist.textContent = songData[index].artist
   songName.textContent = songData[index].name
   songArtist.textContent = songData[index.artist]
-  audio.src = `music/${songData[index].src}.mp3`
+  audio.src = `music/${songData[index].src}`
 }
 
 const playSong = () => {
@@ -104,3 +104,11 @@ const pauseSong = () => {
   playPauseBtn.firstElementChild.className = 'fa-solid fa-play'
   audio.pause()
 }
+
+playPauseBtn.addEventListener('click', () => {
+  if (container.classList.contains('pause')) {
+    pauseSong()
+  } else {
+    playSong()
+  }
+})
