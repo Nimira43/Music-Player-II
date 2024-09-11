@@ -78,3 +78,6 @@ const songTime = document.querySelector('.song-time')
 const songProgress = document.querySelector('.song-progress')
 const coverName = document.querySelector('.cover span:nth-child(2)')
 const coverArtist = document.querySelector('.cover span:nth-child(1)')
+
+let songIndex = 0
+
