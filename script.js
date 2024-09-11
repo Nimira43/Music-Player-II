@@ -81,6 +81,10 @@ const coverArtist = document.querySelector('.cover span:nth-child(1)')
 
 let songIndex = 0
 
+window.addEventListener('load', () => {
+  loadSong(songIndex)
+})
+
 const loadSong = (index) => {
   coverName.textContent = songData[index].name
   coverArtist.textContent = songData[index].artist
@@ -89,3 +93,8 @@ const loadSong = (index) => {
   audio.src = `music/${songData[index].src}.mp3`
 }
 
+const playSong = () => {
+  container.classList.add('pause')
+  playPauseBtn.firstElementChild.className = 'fa-solid fa-pause'
+  audio.play()
+}
