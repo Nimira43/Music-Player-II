@@ -98,3 +98,9 @@ const playSong = () => {
   playPauseBtn.firstElementChild.className = 'fa-solid fa-pause'
   audio.play()
 }
+
+const pauseSong = () => {
+  container.classList.remove('pause')
+  playPauseBtn.firstElementChild.className = 'fa-solid fa-play'
+  audio.pause()
+}
