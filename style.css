@@ -153,19 +153,38 @@ html {
 
 .song-info i {
   font-size: 2rem;
-  color: var(--yellow);
+  color: var(--main);
 }
 
 .song-time {
   width: 100%;
-  height: 0.5rem;
+  height: 0.8rem;
   background-color: var(--dark);
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   box-shadow: 0.1rem 0.1rem 0.1rem var(--main);
-  cursor: pointer
+  cursor: pointer;
+  position: relative;
 }
 
 .song-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: var(--yellow);
+  border-radius: 0.5rem;
+}
 
+.time {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+} 
+
+.time span {
+  font-size: 1.2rem;
+  color: var(--secondary)
 }
