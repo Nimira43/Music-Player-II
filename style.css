@@ -42,13 +42,36 @@ html {
   height: 70rem;
   background: linear-gradient(
     to top,
-    var(--yellow),
-    var(--secondary)
+    var(--dark),
+    var(--grey-d)
   );
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   padding: 3rem;
+}
+
+.player-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-btn {
+  width: 4rem;
+  height: 4rem;
+  border: 0.2rem solid var(--main);
+  border-radius: 1.2rem;
+  background-color: var(--dark);
+  color: var(--yellow);
+  box-shadow: 0.5rem 0.5rem 2rem -0.1rem rgba(0, 0, 0, 0.5),
+              -0.4rem -0.4rem 2rem -0.1rem rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.player-btn:active {
+  transform: translateY(0.2rem);
 }
 
