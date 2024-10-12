@@ -114,3 +114,24 @@ playPauseBtn.addEventListener('click', () => {
     playSong()
   }
 })
+
+const prevSongPlay = () => {
+  songIndex--
+  if (songIndex < 0) {
+    songIndex = songData.length - 1
+  }
+  loadSong(songIndex)
+  playSong()
+}
+
+const nextSongPlay = () => {
+  songIndex++
+  if (songIndex > songData.length - 1) {
+    songIndex = 0
+  }
+  loadSong(songIndex)
+  playSong()
+}
+
+prevBtn.addEventListener('click', prevSongPlay)
+nextBtn.addEventListener('click', nextSongPlay)
