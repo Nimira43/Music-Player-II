@@ -107,6 +107,19 @@ html {
   border-radius: var(--br-round);
 }
 
+.rotate {
+  animation: coverRotate 10s linear infinite;
+}
+
+@keyframes coverRotate {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
 .cover span {
   font-family: 'Caveat', cursive;
   position: absolute;

@@ -97,12 +97,14 @@ const playSong = () => {
   container.classList.add('pause')
   playPauseBtn.firstElementChild.className = 'fa-solid fa-pause'
   audio.play()
+  cover.classList.add('rotate')
 }
 
 const pauseSong = () => {
   container.classList.remove('pause')
   playPauseBtn.firstElementChild.className = 'fa-solid fa-play'
   audio.pause()
+  cover.classList.remove('rotate')
 }
 
 playPauseBtn.addEventListener('click', () => {
